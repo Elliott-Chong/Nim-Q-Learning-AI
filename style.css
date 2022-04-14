@@ -1,0 +1,72 @@
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.container{
+    background-color: rgb(100, 100, 100);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px
+}
+
+.stick{
+    --border: 2px;
+    background-color: #EBE3CD;
+    width: 8px;
+    height: 100%;
+    position: relative;
+    border-top-left-radius: var(--border);
+    border-top-right-radius: var(--border);
+}
+.stick::before{
+    content: '';
+    position: absolute; 
+    border-top-left-radius: var(--border);
+    border-top-right-radius: var(--border);
+    background-color: rgb(168, 0, 0);
+    width: 100%;
+    height: 8px;
+    top: 0;
+    left: 0; 
+}
+
+.row{
+    /* background-color: red; */
+    width: 25%;
+    height:80px;
+    position: relative;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #EBE3CD;
+    border: none;
+    padding: 3px 6px;
+    right: 0;
+    font-weight: 600;
+    justify-self: flex-end;
+}
+
+.btn.remove{
+    position: absolute;
+}
+
+
+
+#btn-container{
+    display: flex;
+    gap: 10px;
+    order: 10;
+    margin-top: 10px;
+}
