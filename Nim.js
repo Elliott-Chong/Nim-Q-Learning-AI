@@ -129,7 +129,7 @@ export default class Nim {
 
     gameOverScreen() {
         qs('#game-over-screen').classList.remove('hidden')
-        qs('#game-over-screen>h1').innerText = this.player == 1 ? 'You Won!' : 'You Lost :('
+        qs('#game-over-screen>h1').innerText = this.player == 1 ? 'You Win!' : 'You Lose :('
     }
 
     convertToKey(state, action) {

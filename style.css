@@ -17,7 +17,7 @@
 }
 
 .stick{
-    --border: 2px;
+    --border:15px;
     background-color: #EBE3CD;
     width: 8px;
     height: 100%;
@@ -116,6 +116,12 @@ a {
     color:white
 }
 
+
+@media (max-width:1400px) {
+    .row{
+        width:50%
+    }
+}
 @media (max-width:800px) {
     .row{
         width:90%
