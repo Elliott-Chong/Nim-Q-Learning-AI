@@ -1,132 +1,132 @@
-*, *::before,*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 
-
-.container{
-    background-color: rgb(49, 49, 49);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:15px
+.container {
+  background-color: rgb(49, 49, 49);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 3rem;
 }
 
-.stick{
-    --border:15px;
-    background-color: #EBE3CD;
-    width: 8px;
-    height: 100%;
-    position: relative;
-    border-top-left-radius: var(--border);
-    border-top-right-radius: var(--border);
+.stick {
+  --border: 15px;
+  background-color: #ebe3cd;
+  width: 8px;
+  height: 100%;
+  position: relative;
+  border-top-left-radius: var(--border);
+  border-top-right-radius: var(--border);
 }
-.stick::before{
-    content: '';
-    position: absolute; 
-    border-top-left-radius: var(--border);
-    border-top-right-radius: var(--border);
-    background-color: rgb(168, 0, 0);
-    width: 100%;
-    height: 8px;
-    top: 0;
-    left: 0; 
+.stick::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: var(--border);
+  border-top-right-radius: var(--border);
+  background-color: rgb(168, 0, 0);
+  width: 100%;
+  height: 8px;
+  top: 0;
+  left: 0;
 }
 
-.row{
-    /* background-color: red; */
-    width: 25%;
-    height:80px;
-    position: relative;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
+.row {
+  /* background-color: red; */
+  width: 25%;
+  height: 80px;
+  position: relative;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-    color:white
+  color: white;
 }
 
-.btn, select{
-    cursor: pointer;
-    background-color: #EBE3CD;
-    border: none;
-    padding: 3px 6px;
-    right: 0;
-    font-weight: 600;
-    /* justify-self: flex-end; */
+.btn,
+select {
+  cursor: pointer;
+  background-color: #ebe3cd;
+  border: none;
+  padding: 3px 6px;
+  right: 0;
+  font-weight: 600;
+  /* justify-self: flex-end; */
 }
 
-.btn.remove{
-    position: absolute;
+.btn.remove {
+  position: absolute;
 }
-
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
-
-#btn-container{
-    display: flex;
-    gap: 10px;
-    order: 10;
-    margin-top: 10px;
+#btn-container {
+  display: flex;
+  gap: 10px;
+  order: 10;
+  margin-top: 10px;
 }
 
 #game-over-screen {
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    color:white;
-    font-size: 1.5rem;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.836);
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 1.5rem;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.836);
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.expand{
-    width:30% !important;
+.expand {
+  width: 30% !important;
 }
 
 #info {
-    order:1000;
-    font-weight: 600;
-    color:white;
-    width: 40%;
+  order: 1000;
+  font-weight: 600;
+  color: white;
+  width: 40%;
 }
 
 #training {
-    color: white;
-    font-weight:600;
-    font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-.compute{
-    background-color: rgb(0, 0, 0);
-    color:white
+.compute {
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 
-
-@media (max-width:1400px) {
-    .row{
-        width:50%
-    }
+@media (max-width: 1400px) {
+  .row {
+    width: 50%;
+  }
 }
-@media (max-width:800px) {
-    .row{
-        width:90%
-    }
-    #info {
-        width:90%
-    }
+@media (max-width: 800px) {
+  .row {
+    width: 90%;
+  }
+  #info {
+    width: 90%;
+  }
 }
