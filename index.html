@@ -15,6 +15,25 @@
     <script src="script.js" type="module" defer></script>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div id="info">
+        The human goes first. On each turn, you must remove at least one stick, and may remove any number of sticks provided they are all on the same row. The player who removes the last stick loses.
+      </br><br>
+    After you are done, press 'AI move' for the AI to make a move. The AI is trained by reinforcement learning (Q-learning).
+    </br><br>
+     By playing against itself for 10,000 games, and assigning rewards and punishments to its moves, the AI is able to learn the optimal move to play at any state.
+    </br><br>
+    Toggle computation to allow the AI to train against itself in real time (check the console). Else by default, the AI takes the optimal move from a pre-trained Q-value table so as to save your computing resources.
+  </br><br>
+    Source code: <a href="https://github.com/Elliott-Chong/Nim-Q-Learning-AI">Elliott Chong</a>
+      </div>
+      <div id="training">
+        Training AI... Check the console for more information.
+      </div>
+    </div>
+    <div id="game-over-screen" class="hidden">
+      <h1>Game Over!</h1>
+      <button class="btn" id="restart-btn">Restart</button>
+    </div>
   </body>
 </html>

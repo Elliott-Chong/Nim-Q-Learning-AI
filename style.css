@@ -7,7 +7,7 @@
 
 
 .container{
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(49, 49, 49);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -48,14 +48,18 @@
     align-items: center;
 }
 
-.btn{
+a {
+    color:white
+}
+
+.btn, select{
     cursor: pointer;
     background-color: #EBE3CD;
     border: none;
     padding: 3px 6px;
     right: 0;
     font-weight: 600;
-    justify-self: flex-end;
+    /* justify-self: flex-end; */
 }
 
 .btn.remove{
@@ -63,10 +67,60 @@
 }
 
 
+.hidden {
+    display: none !important;
+}
+
 
 #btn-container{
     display: flex;
     gap: 10px;
     order: 10;
     margin-top: 10px;
+}
+
+#game-over-screen {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    color:white;
+    font-size: 1.5rem;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.836);
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expand{
+    width:30% !important;
+}
+
+#info {
+    order:1000;
+    font-weight: 600;
+    color:white;
+    width: 40%;
+}
+
+#training {
+    color: white;
+    font-weight:600;
+    font-size: 1.5rem;
+}
+
+.compute{
+    background-color: rgb(0, 0, 0);
+    color:white
+}
+
+@media (max-width:800px) {
+    .row{
+        width:90%
+    }
+    #info {
+        width:90%
+    }
 }
