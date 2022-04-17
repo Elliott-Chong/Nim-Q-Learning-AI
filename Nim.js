@@ -152,8 +152,12 @@ export default class Nim {
 
     initialiseUI() {
         const container = qs('.container')
+        let trainingDiv = qs('#training')
         if (!COMPUTE) {
             qs('#training').innerText = ''
+        }
+        else {
+            trainingDiv.innerText = 'Training AI... Check the console for more information.'
         }
         for (let rowIndex = 0; rowIndex < this.piles.length; rowIndex++) {
             let rowElt = document.createElement('div')
